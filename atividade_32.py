@@ -1,12 +1,9 @@
 valor_produto = float(input("Digite o valor total do produto: R$"))
-Valor_com_desconto = valor_produto * 0.10
-valor_total_com_desconto =  valor_produto - Valor_com_desconto
-valor_parcelado = valor_produto / 3
-comissão_com_desconto = Valor_com_desconto * 0.05
-comissão_total_com_desconto = valor_total_com_desconto + comissão_com_desconto
-comissão_parcelado = valor_produto * 0.05
-comissão_total_parcelado = valor_produto + comissão_parcelado
-print("O valor do produto com 10% de desconto sera: R$", valor_total_com_desconto)
-print("O valor de cada parcela será: R$", valor_parcelado)
-print("A comissão do vendedor da venda com desconto será: R$", comissão_total_com_desconto)
-print("A comissão do vendedor caso a venda seja parcelada sera: R$", comissão_total_parcelado)
+total_com_desconto = valor_produto * 0.9
+valor_parcela = valor_produto / 3
+comissao_avista = total_com_desconto * 0.05
+comissao_parcelado = valor_produto * 0.05
+print("O valor total a pagar com desconto de 10% é: R$", total_com_desconto)
+print("O valor de cada parcela será: R$", valor_parcela)
+print("A comissão o vendedor, caso ele consiga vender a vista é: R$", comissao_avista)
+print("A comissão do vendeor, caso ele venda parcelado é: R$", comissao_parcelado)
